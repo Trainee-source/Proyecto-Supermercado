@@ -1,0 +1,34 @@
+﻿
+.hidden
+{
+    display: none;
+}
+
+#carrito {
+    position: absolute;
+    top: 650px;
+    height: 250px;
+    width: 100%;
+    background-color: #1E88D2;
+    font-weight: 600;
+    font-family: 'Microsoft New Tai Lue';
+    justify-content: center;
+    align-content: center;
+    color: white;
+}
+
+#carritoContenido {
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+}
+
+#carritoTotal 
+{
+    position: absolute;
+    left: 60%;
+    font-size: 42px;
+    padding: 100px;
+    cursor: pointer;
+}

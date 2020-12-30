@@ -1,0 +1,59 @@
+﻿body {
+}
+
+#cabecera
+{
+    height:150px;
+    background-color:#0094ff;
+    border:1px solid #000000;
+    box-shadow:0px 0px 10px #000;
+}
+
+
+#contenidoCabecera
+{
+
+}
+
+
+#logotipo {
+    float: left;
+    text-align: left;
+    margin-top:0px;
+    margin-left:200px;
+    width:0px;
+    height:0px;
+}
+
+    #logotipo > img {
+        box-shadow: 0px 0px 10px #000;
+    }
+
+
+#barraDeBusqueda
+{
+    margin-top:10px;
+    margin-left:700px;
+    width:0px;
+    height:0px;
+}
+
+
+#barraCategorias
+{
+    margin-top:40px;
+    margin-left:400px;
+    width:0px;
+    height:0px;
+}
+
+#cambiadorImagenesCentral 
+{
+    height: 150px;
+    background-color: #0094ff;
+}
+
+#columCentro
+{
+
+}

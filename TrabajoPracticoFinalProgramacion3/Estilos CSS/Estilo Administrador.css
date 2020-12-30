@@ -1,0 +1,79 @@
+﻿
+.hidden
+{
+    display: none;
+}
+
+.labels {
+    font-family: 'Microsoft New Tai Lue';
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    align-self: center;
+}
+
+.grid_scroll {
+    overflow: auto;
+    border: solid 1px orange;
+    background-color: white;
+    height: 300px;
+    width: 800px;
+}
+
+.ventanaAdmin {
+    position: absolute;
+    left: 0px;
+    top: 120px;
+    height: 480px;
+    font-family: 'Microsoft New Tai Lue';
+    width: 100%;
+    background-color: none;
+}
+
+.editarProductos 
+{
+    position: relative;
+    left: 900px;
+    height: 300px;
+    width: 200px;
+}
+
+
+.solapasAdmin {
+    position: absolute;
+    margin: 10px;
+    top: 40px;
+    height: 370px;
+    width: 100%;
+    background-color: #1E88D2;
+    padding: 35px;
+}
+
+.Initial {
+    display: block;
+    height: 50px;
+    width: 150px;
+    float: left;
+    background-color: #1E88D2;
+    color: Black;
+    font-weight: bold;
+    border: none;
+    margin-left: 5px;
+}
+
+    .Initial:hover {
+        color: white;
+        background-color: burlywood;
+    }
+
+.Clicked {
+    display: block;
+    height: 50px;
+    width: 150px;
+    float: left;
+    background-color: aquamarine;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-left: 5px;
+}

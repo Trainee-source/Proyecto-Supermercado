@@ -1,0 +1,72 @@
+﻿
+.hidden
+{
+    display: none;
+}
+
+.labels 
+{
+    font-family: 'Microsoft New Tai Lue';
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    align-self: center;
+}
+
+.ventana {
+    position: absolute;
+    left: 0px;
+    top: 140px;
+    height: 1200px;
+    font-family: 'Microsoft New Tai Lue';
+    width: 100%;
+    background-color: none;
+}
+
+.botones
+{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    left: 10px;
+}
+
+.Initial {
+    display: block;
+    height: 50px;
+    width: 100px;
+    float: left;
+    background-color: #1E88D2;
+    color: Black;
+    font-weight: bold;
+    border: none;
+    margin-left: 5px;
+}
+
+        .Initial:hover
+        {
+            color: white;
+            background-color: burlywood;
+        }
+
+.Clicked 
+{
+    display: block;
+    height: 50px;
+    width: 100px;
+    float: left;
+    background-color: aquamarine;
+    color: white;
+    font-weight: bold;
+    border: none;
+    margin-left: 5px;
+}
+
+.solapas {
+    position: absolute;
+    top: 50px;
+    height: 1200px;
+    width: 100%;
+    background-color: #1E88D2;
+    padding: 50px;
+}

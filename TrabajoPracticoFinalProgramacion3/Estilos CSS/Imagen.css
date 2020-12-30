@@ -1,0 +1,12 @@
+﻿
+.imagenes 
+{
+    position: absolute;
+    top: 135px;
+    height: 440px;
+    width: 100%;
+    font-family: 'Microsoft New Tai Lue';
+    font-weight: 600;
+    color: white;
+    text-align: left;
+}

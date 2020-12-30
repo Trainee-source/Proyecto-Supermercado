@@ -1,0 +1,41 @@
+﻿
+.bg-modal
+{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    background-color: rgba(30, 136, 210, 0.7);
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'Microsoft New Tai Lue';
+    padding: 20px;
+    position: relative;
+}
+
+.modal-text {
+    top: 10px;
+    width: 50%;
+    margin: 15px auto;
+    font-family: 'Microsoft New Tai Lue';
+}
+
+
+.close
+{
+    position: absolute;
+    top: 0px;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+}

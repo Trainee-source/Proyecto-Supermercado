@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Placa.master.cs" Inherits="TrabajoPracticoFinalProgramacion3.Placa" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    
+    <script type ="text/javascript">
+
+        function onKeyDecimal(e, thix) {
+            var keynum = window.event ? window.event.keyCode : e.which;
+            if (document.getElementById(thix.id).value.indexOf('.') != -1 && keynum == 46)
+                return false;
+            if ((keynum == 8 || keynum == 48 || keynum == 46))
+                return true;
+            if (keynum <= 47 || keynum >= 58) return false;
+            return /\d/.test(String.fromCharCode(keynum));
+        }
+
+        function justNumbers(e) {
+            var keynum = window.event ? window.event.keyCode : e.which;
+            if ((keynum == 8 || keynum == 48))
+                return true;
+            if (keynum <= 47 || keynum >= 58) return false;
+            return /\d/.test(String.fromCharCode(keynum));
+        }
+
+        function soloLetras(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            if (charCode > 31 && (charCode < 48 || charCode > 57))
+                return true;
+
+            return false;
+        }
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            left: 43%;
+            top: 48%;
+        }
+        .auto-style3 {
+            height: 28px;
+        }
+        </style>
+    <link href='Estilos%20CSS/Estilos.css' rel='stylesheet' type="text/css" runat="server"/>
+    <link href="Estilos%20CSS/Estilos%20Usuario.css" rel="stylesheet" type="text/css" runat="server"/>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+        <div id="abrigoGeneral">
+            
+            <div id="barraSuperior" Height="35px">
+               <div id="imagen"><asp:Image ID="Image1" runat="server" Height="96px" ImageUrl="~/ImagenesWeb/NuevoLogoWeb.png" Width="104px" OnClick="Logo_Click"/></div> 
+                <div id="separador"></div>
+                <div id="buscador" class="auto-style2">
+                <table><td class="auto-style3"><asp:TextBox ID="TextBox1" onkeypress="return soloLetras(event);" runat="server" Width="180px"></asp:TextBox></td>
+                    <td class="auto-style3"><asp:ImageButton id="Search" runat="server" Height="24px" ImageUrl="~/ImagenesWeb/lupa.png" Width="23px" OnClick="Search_Click" /></td>
+                 </table>
+                    </div>
+
+                <div id="boton1"><asp:ImageButton ID="BotonCarrito" runat="server" Height="40px" ImageUrl="~/ImagenesWeb/carrito.png" Width="40px" OnClick="BotonCarrito_Click" /></div>
+                <div id="boton2"><asp:ImageButton ID="BotonRegistro" runat="server" Height="40px" ImageUrl="~/ImagenesWeb/usuario.png" Width="40px" OnClick="BotonRegistro_Click" /></div>
+                <div id="boton3"><asp:ImageButton ID="BotonRecompra" runat="server" ImageUrl="~/ImagenesWeb/Recompra.png" Height="40px" Width="40px" OnClick="BotonRecompra_Click" /></div>
+
+                <div class="barraUsuario">
+                    <asp:Label id="usuarioNombre" Text="" runat="server" />
+                    <asp:LinkButton ID="logoutbttn" Text="Logout" runat="server" OnClick="logoutbttn_Click" Visible="false"/>
+                </div>
+
+            </div>
+
+            <div id="barraInferior">
+                <br />
+                <br />
+&nbsp;&nbsp;&nbsp; Atención al cliente Tarjeta Nisi:
+
+0810 - 122 - 8296<br />
+                <br />
+&nbsp;&nbsp;&nbsp; Atención al cliente 0810 - 444 - 9256
+
+</div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+            </div>
+    </form>
+
+</body>
+</html>
